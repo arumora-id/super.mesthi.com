@@ -1,0 +1,3 @@
+import { PageHeader, Card, Badge } from '../../components/ui'
+const rows=[['FREE','Entry plan'],['PRO','Professional users'],['BUSINESS','Teams and organizations'],['ENTERPRISE','Custom enterprise']]
+export function PlansPage(){return <><PageHeader title="Plans" description="Global plan definitions belong to super.mesthi.com. Write controls stay disabled until Plan/Entitlement APIs and audit logging exist."/><div className="grid gap-3 md:grid-cols-2">{rows.map(([name,desc])=><Card key={name}><div className="flex justify-between"><div><div className="font-medium">{name}</div><div className="mt-1 text-sm text-slate-500">{desc}</div></div><Badge tone="amber">Contract pending</Badge></div></Card>)}</div></>}
