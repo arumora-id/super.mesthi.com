@@ -36,7 +36,9 @@ export function CapacityMeter({ label, value, max, unit = '' }: CapacityMeterPro
       },
     )
 
-    return () => tween.kill()
+    return () => {
+      tween.kill()
+    }
   }, [percentage])
 
   return (

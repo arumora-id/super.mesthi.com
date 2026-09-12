@@ -33,7 +33,9 @@ export function AnimatedNumber({
       },
     })
 
-    return () => tween.kill()
+    return () => {
+      tween.kill()
+    }
   }, [formatter, value])
 
   return <span ref={ref}>{value == null ? fallback : formatter(value)}</span>
