@@ -1,0 +1,2 @@
+import { PageHeader, Empty } from '../../components/ui'
+export function SubscriptionsPage(){return <><PageHeader title="Subscriptions" description="Customer subscriptions, account entitlements, usage and manual overrides will appear here after C4.6 billing contracts are implemented."/><Empty title="Subscription API not available in 1.12.2" body="The UI intentionally does not fabricate billing data. Backend schema, RBAC and audit log come first."/></>}
